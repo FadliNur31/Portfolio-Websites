@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700;800&display=swap');
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image:url(Vector2.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 4rem;
+    align-items: center;
+}
+header a img{
+    width: 7rem;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width:14rem;
+    color: white;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+header nav .icon-menu{
+    display: none;
+}
+#contact-us{  
+    width: 5rem;
+}
+#contact-us .icon{
+    border-radius: 10px;
+    width: 4rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+    left: -7px;;
+    top: 19rem;}
+#contact-us img{
+    width:2rem 
+}
+.icon a:hover{
+    display: flex;
+    justify-content: center;
+    width:2.3rem;
+    height:2.2rem;
+    border-radius: 5px;
+}
+main{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+}
+main .About-me{
+    max-width: 70rem;
+}
+main .About-me h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+main .About-me span{
+    color: #6b5757;
+}
+main .About-me p{
+    margin-top: 0.4rem;
+    font-size: 1.68rem;
+    font-weight: 100;
+    color: rgb(79, 85, 89);
+    max-width: 54rem;
+}
+main h2{
+    font-size: 1.68rem;
+    font-weight: 100;
+    color: rgb(161, 157, 151);
+    margin-right: 1.3rem;
+}
+main .stacks{
+    display: flex;
+    max-width: 70rem;
+    height: 5rem;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+main .stacks img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1.2rem;
+}
+.Projects{
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Projects #BOX .title{
+    text-align: center;
+    background-color: #976565;
+    width:16rem;
+    border-radius: 50px;
+    height: 3.5rem;
+    color: white;
+    padding: 0.3rem;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+.Projects-1{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    padding:0 3rem;
+    gap:10rem
+}
+.Projects-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #976565;
+    width: 33rem;
+    height: 21rem;
+    border-radius: 35px;
+    grid-column: 1/ span 1;
+    box-shadow: 11px 11px 5px -8px rgba(0,0,0,0.46);
+}
+.Projects-Image img{
+    max-width: 29rem;
+    max-height: 21rem;
+    border-radius: 10px;
+}
+.Projects-1 .Caption{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    grid-column: 2/ span 1;
+    padding-top: 2rem;
+}
+.Projects-1 .Caption h1{
+    text-align: center;
+    width: 30rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+.Projects-1 .Caption P{
+    font-size: 1.3rem;
+    width:25rem;
+    margin-left: 2rem;
+    color: rgb(107, 111, 114);
+}
+.Projects-1 .Caption .stacks{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.7rem;
+    color: black;
+}
+.link{
+    width:25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+.Projects-1 .Caption a{
+   text-decoration: none;
+   color: black;
+   font-size: 1.5rem;
+}
+.Projects-1 .Caption img{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+a:hover{
+    color:#a84f4f
+}
+footer{
+    display: none;
+}
+@media only screen and (min-width: 1600px){
+    html{
+        display: flex;
+        justify-content: center;
+    }
+    body{
+        background-size: cover;
+        max-width:1440px;
+    }
+}
+@media only screen and (max-width: 812px){
+    header{
+        margin : 1.5rem 2rem;
+    }
+    header nav{
+        display:none;
+    }
+    #contact-us{
+        display: none;
+    }
+    .Projects-1{
+        display: block;
+    }
+    .Projects-Image{
+        max-width: 33rem;
+        max-height: 21rem;
+    }
+    .Projects-Image img{
+        width: 90%;
+        height: auto;
+    }
+    footer{
+        margin-top: 10rem;
+        display: grid;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    footer hr{
+        height: 0.5px;
+        margin-top: 3rem;
+        width: 70rem;
+        color: #efe5e5;
+    }
+    footer h1{
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: #bab5b5;
+        text-align: center;
+    }
+    footer .contact{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 20rem;
+        margin-bottom: 0px;
+    }
+    footer img{
+        width: 1.2rem;
+    }
+}
+@media only screen and (max-width: 561px){
+    header{
+        margin : 1.5rem 1rem;
+    }
+    header a img{
+        width: 5rem;
+    }
+    main{
+        margin: 5rem 0rem;
+        padding: 1rem;
+    }
+    
+    main .About-me h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    main .About-me p{
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 100;
+        color: rgb(79, 85, 89);
+        max-width: 23rem;
+    }
+    main h2{
+        font-size: 1.3rem;
+        font-weight: 100;
+        color: rgb(161, 157, 151);
+        margin-right: 1.3rem;
+    }
+    main .stacks{
+        display: flex;
+        max-width: 70rem;
+        height: 5rem;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    main .stacks img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0 1.2rem;
+    }
+    .Projects{
+        margin-top: 3rem;
+    }
+    .Projects #BOX .title{
+        text-align: center;
+        background-color: #976565;
+        width:10rem;
+        border-radius: 50px;
+        height: 3rem;
+        color: white;
+        padding: 0.6rem;
+        font-weight: 700;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        font-size: 1.5rem;
+    }
+    .Projects-Image{
+        max-width: 20rem;
+        max-height: 18rem;
+        margin: 0 auto;
+    }
+    .Projects-Image img{
+        width: 18rem;
+        height: 15rem;
+    }
+    .Projects-1 .Caption h1{
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    }
+    .Projects-1 .Caption P{
+        font-size: 0.7rem;
+        width:15rem;
+        color: rgb(107, 111, 114);
+    }
+    .Projects-1 .Caption .stacks{
+        margin-top: 1.5rem;
+        text-align: center;
+        font-weight: 200;
+        font-size: 1rem;
+        color: black;
+    }
+    .link{
+        width:18rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .Projects-1 .Caption a{
+       text-decoration: none;
+       color: black;
+       font-size: 1rem;
+    }
+    .Projects-1 .Caption img{
+        width: 1rem;
+        height: 1rem;
+    }
+    footer .contact{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 30rem;
+    }
+
+}
